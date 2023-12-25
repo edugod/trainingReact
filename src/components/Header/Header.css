@@ -3,6 +3,10 @@
     color: white;
 }
 
-.h-container {
-
+.h-container{
+    /* tive que colocar esse important pq o flexCenter estava sendo o pai da aplicação e sobrepondo */
+    justify-content: space-between !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    color: var(--secondary);
 }

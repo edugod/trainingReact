@@ -11,4 +11,10 @@
     color: var(--secondary);
 }
 
-https://www.youtube.com/watch?v=edBx-fjgh4k
+.h-menu {
+    gap: 2rem;
+}
+
+.h-menu>*:hover {
+    cursor: pointer;
+}

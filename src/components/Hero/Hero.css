@@ -6,9 +6,10 @@
 }
 
 .hero-container {
-    justify-content: space-between !important;
-    align-items: flex-end !important;
+    justify-content: space-between !important; /* estou tendo que colocar !important  */
+    align-items: flex-end !important; /* pq a propriedade flexCenter está sobescrevendo a outra. */
 }
+
 
 /* right side */
 

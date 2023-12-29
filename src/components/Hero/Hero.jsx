@@ -1,1 +1,23 @@
-https://youtu.be/edBx-fjgh4k?si=4Q03XLsMCOwvvzAC&t=1625
+import React from 'react'
+import './Hero.css'
+
+const Hero = () => {
+	return (
+		<section className='hero-wrapper'>
+			<div className='paddings innerWidth flexCenter  hero-container '>
+
+				<div className='hero-left'>
+                    Left Section
+                </div>
+
+				<div className='flexCenter hero-right'>
+                    <div className="image-container">
+                        <img src="./macos.jpg" alt=""/>
+                    </div>
+                </div>
+			</div>
+		</section>
+	)
+}
+
+export default Hero

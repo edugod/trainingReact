@@ -1,0 +1,31 @@
+.hero-wrapper {
+    color: white;
+    position: relative;
+    padding-bottom: 2rem;
+    background-color: var(--black);
+}
+
+.hero-container {
+    justify-content: space-between !important;
+    align-items: flex-end !important;
+}
+
+/* right side */
+
+.image-container {
+    width: 30rem;
+    height: 35rem;
+    overflow: hidden;
+    border-radius: 15rem 15rem 0 0;
+    border: 8px solid rgba(255, 255, 255, 0.12);
+}
+
+.image-container>img {
+    width: 100%;
+    height: 100%;
+}
+
+https://youtu.be/edBx-fjgh4k?si=dw7Rlci32TMnPB5B&t=2024
+
+
+

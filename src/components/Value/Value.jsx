@@ -16,7 +16,6 @@ const Value = () => {
 	return (
 		<section className='v-wrapper'>
 			<div className='paddings innerWidth flexCenter v-container'>
-				{/* aqui a gente tem 2 seções, left section (img) e right */}
 				{/* left side */}
 				<div className='v-left'>
 					<div className='image-container'>
@@ -39,37 +38,37 @@ const Value = () => {
 						preExpanded={[0]} //para deixar pre aberto alguem
 					>
 						{data.map((item, i) => {
-    const [className, setClassName] = useState(null);
+							const [className, setClassName] = useState(null)
 
-    useEffect(() => {
-        // Este efeito será acionado após a renderização, evitando o problema de setState durante a renderização.
-        setClassName(item.expanded ? 'expanded' : 'collapsed');
-    }, [item.expanded]);
+							useEffect(() => {
+								// Este efeito será acionado após a renderização, evitando o problema de setState durante a renderização.
+								setClassName(item.expanded ? 'expanded' : 'collapsed')
+							}, [item.expanded])
 
-    return (
-        <AccordionItem className={`accordionItem ${className}`} key={i} uuid={i}>
-            <AccordionItemHeading>
-                <AccordionItemButton className='flexCenter accordionButton'>
-                    <AccordionItemState>
-                        {({ expanded }) => (
-                            <React.Fragment>
-                                <div className='flexCenter icon'>{item.icon}</div>
-                                <span className='primaryText'>{item.heading}</span>
-                                <div className='flexCenter icon'>
-                                    <MdOutlineArrowDropDown size={20} />
-                                </div>
-                            </React.Fragment>
-                        )}
-                    </AccordionItemState>
-                </AccordionItemButton>
-            </AccordionItemHeading>
+							return (
+								<AccordionItem className={`accordionItem ${className}`} key={i} uuid={i}>
+									<AccordionItemHeading>
+										<AccordionItemButton className='flexCenter accordionButton'>
+											<AccordionItemState>
+												{({ expanded }) => (
+													<React.Fragment>
+														<div className='flexCenter icon'>{item.icon}</div>
+														<span className='primaryText'>{item.heading}</span>
+														<div className='flexCenter icon'>
+															<MdOutlineArrowDropDown size={20} />
+														</div>
+													</React.Fragment>
+												)}
+											</AccordionItemState>
+										</AccordionItemButton>
+									</AccordionItemHeading>
 
-            <AccordionItemPanel>
-                <p className='secondaryText'>{item.detail}</p>
-            </AccordionItemPanel>
-        </AccordionItem>
-    );
-})}
+									<AccordionItemPanel>
+										<p className='secondaryText'>{item.detail}</p>
+									</AccordionItemPanel>
+								</AccordionItem>
+							)
+						})}
 					</Accordion>
 				</div>
 			</div>

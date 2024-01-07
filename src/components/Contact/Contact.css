@@ -1,0 +1,7 @@
+.c-container {
+    justify-content: space-between;
+}
+
+.c-container>div {
+    flex: 1;
+}
